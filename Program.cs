@@ -1,4 +1,5 @@
 ﻿using System;
+using Hubes.Kata.Difficulties;
 
 namespace Hubes.Kata
 {
@@ -13,8 +14,9 @@ namespace Hubes.Kata
             Console.WriteLine(@"|  _  | | | | '_ \ / _ \/ __| |    \ / _` | __/ _` |");
             Console.WriteLine(@"| | | | |_| | |_) |  __/\__ \_| |\  \ (_| | || (_| |");
             Console.WriteLine(@"\_| |_/\__,_|_.__/ \___||___(_)_| \_/\__,_|\__\__,_|");
+            Console.WriteLine("An exception will occur if tests do not pass");
             
-            
+            Eight.HowManyLightsaverDoYouOwn();
             
             Console.WriteLine(@"                _ ");
             Console.WriteLine(@"               | |");
