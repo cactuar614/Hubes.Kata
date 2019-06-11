@@ -17,6 +17,7 @@ namespace Hubes.Kata
             Console.WriteLine("An exception will occur if tests do not pass");
             
             Eight.HowManyLightsaverDoYouOwn();
+            Eight.ToJadenCase();
             
             Console.WriteLine(@"                _ ");
             Console.WriteLine(@"               | |");
