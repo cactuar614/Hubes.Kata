@@ -34,5 +34,19 @@ namespace Hubes.Kata.Difficulties
 
             return phrase;
         }
+
+        public static void ReverseWords()
+        {
+            Debug.Assert("world! hello" == ReverseWords("hello world!"));
+            Debug.Assert("this like speak doesn't yoda" == ReverseWords("yoda doesn't speak like this"));
+            Debug.Assert("foobar" == ReverseWords("foobar"));
+            Debug.Assert("kata editor" == ReverseWords("editor kata"));
+            Debug.Assert("boat your row row row" == ReverseWords("row row row your boat"));
+        }
+
+        public static string ReverseWords(string str)
+        {
+            return String.Join(' ', str.Split(' ', StringSplitOptions.None).Reverse());
+        }
     }
 }
