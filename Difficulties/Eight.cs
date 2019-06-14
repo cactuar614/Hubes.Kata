@@ -32,7 +32,7 @@ namespace Hubes.Kata.Difficulties
                 phrase = phrase.Replace(s, s.First().ToString().ToUpper() + s.Substring(1));
             }
 
-            return phrase;
+            return phrase.Trim();
         }
 
         public static void ReverseWords()

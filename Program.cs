@@ -19,6 +19,7 @@ namespace Hubes.Kata
             Eight.HowManyLightsaverDoYouOwn();
             Eight.ToJadenCase();
             Eight.ReverseWords();
+            Seven.LeapYears();
             
             Console.WriteLine(@"                _ ");
             Console.WriteLine(@"               | |");
