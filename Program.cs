@@ -20,6 +20,7 @@ namespace Hubes.Kata
             Eight.ToJadenCase();
             Eight.ReverseWords();
             Seven.LeapYears();
+            Seven.GetMiddle();
             
             Console.WriteLine(@"                _ ");
             Console.WriteLine(@"               | |");

@@ -28,5 +28,17 @@ namespace Hubes.Kata.Difficulties
         {
             return DateTime.IsLeapYear(year);
         }
+
+        public static void GetMiddle()
+        {
+            Debug.Assert(GetMiddle("test") == "es");
+            Debug.Assert(GetMiddle("Middle") == "dd");
+            Debug.Assert(GetMiddle("A") == "A");
+        }
+
+        public static string GetMiddle(string s)
+        {
+            return s.Length%2==0 ? s.Substring((s.Length-1)/2,2) : s.Substring(s.Length/2,1);
+        }
     }
 }
