@@ -1,5 +1,6 @@
 using System;
 using System.Diagnostics;
+using System.Linq;
 
 namespace Hubes.Kata.Difficulties
 {
@@ -39,6 +40,17 @@ namespace Hubes.Kata.Difficulties
         public static string GetMiddle(string s)
         {
             return s.Length%2==0 ? s.Substring((s.Length-1)/2,2) : s.Substring(s.Length/2,1);
+        }
+
+        public static void FindShort()
+        {
+            Debug.Assert(FindShort("bitcoin take over the world maybe who knows perhaps") == 3);
+            Debug.Assert(FindShort("turns out random test cases are easier than writing out basic ones") == 3);
+        }
+
+        public static int FindShort(string s)
+        {
+            return s.Split(' ').OrderBy(x => x.Length).First().Length;
         }
     }
 }

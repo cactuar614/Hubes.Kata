@@ -14,13 +14,15 @@ namespace Hubes.Kata
             Console.WriteLine(@"|  _  | | | | '_ \ / _ \/ __| |    \ / _` | __/ _` |");
             Console.WriteLine(@"| | | | |_| | |_) |  __/\__ \_| |\  \ (_| | || (_| |");
             Console.WriteLine(@"\_| |_/\__,_|_.__/ \___||___(_)_| \_/\__,_|\__\__,_|");
-            Console.WriteLine("An exception will occur if tests do not pass");
+            //An exception will occur if tests do not pass
+            //TODO: change behavior of passing and failing tests
             
             Eight.HowManyLightsaverDoYouOwn();
             Eight.ToJadenCase();
             Eight.ReverseWords();
             Seven.LeapYears();
             Seven.GetMiddle();
+            Seven.FindShort();
             
             Console.WriteLine(@"                _ ");
             Console.WriteLine(@"               | |");
