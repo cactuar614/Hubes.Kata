@@ -52,5 +52,16 @@ namespace Hubes.Kata.Difficulties
         {
             return s.Split(' ').OrderBy(x => x.Length).First().Length;
         }
+
+        public static void IsPangram()
+        {
+            Debug.Assert(IsPangram("The quick brown fox jumps over the lazy dog"));
+            Debug.Assert(!IsPangram("The quik brown fox jumps over the lazy dog"));
+        }
+
+        public static bool IsPangram(string str)
+        {
+            return str.ToLower().ToCharArray().Where(x => Char.IsLetter(x)).Distinct().Count() == 26;
+        }
     }
 }

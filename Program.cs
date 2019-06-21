@@ -23,6 +23,7 @@ namespace Hubes.Kata
             Seven.LeapYears();
             Seven.GetMiddle();
             Seven.FindShort();
+            Seven.IsPangram();
             
             Console.WriteLine(@"                _ ");
             Console.WriteLine(@"               | |");
