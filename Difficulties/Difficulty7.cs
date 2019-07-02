@@ -4,7 +4,7 @@ using System.Linq;
 
 namespace Hubes.Kata.Difficulties
 {
-    public static class Seven
+    public static class Difficulty7
     {
         public static void LeapYears()
         {

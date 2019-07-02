@@ -6,7 +6,7 @@ using System.Transactions;
 
 namespace Hubes.Kata.Difficulties
 {
-    public static class Eight
+    public static class Difficulty8
     {
         public static void HowManyLightsaverDoYouOwn()
         {
