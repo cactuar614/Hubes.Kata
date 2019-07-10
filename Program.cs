@@ -37,9 +37,14 @@ namespace Hubes.Kata
             
             // https://www.codewars.com/kata/545cedaa9943f7fe7b000048
             Difficulty7.IsPangram();
+
+            // https://www.codewars.com/kata/57f609022f4d534f05000024
+            Difficulty7.IsUniqueNumber();
             
             // https://www.codewars.com/kata/54da539698b8a2ad76000228
             Difficulty6.IsAValidWalk();
+            
+            
             
             Console.WriteLine(@"                _ ");
             Console.WriteLine(@"               | |");

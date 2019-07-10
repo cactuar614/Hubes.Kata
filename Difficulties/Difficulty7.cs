@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 
@@ -62,6 +63,38 @@ namespace Hubes.Kata.Difficulties
         public static bool IsPangram(string str)
         {
             return str.ToLower().ToCharArray().Where(x => Char.IsLetter(x)).Distinct().Count() == 26;
+        }
+
+        public static void IsUniqueNumber()
+        {
+            Debug.Assert(IsUniqueNumber(new int[] {17, 17, 3, 17, 17, 17, 17}) == 3);
+            Debug.Assert(IsUniqueNumber(new int[] {1, 1, 2}) == 2);
+            Debug.Assert(IsUniqueNumber(new int[] {2, 1, 1}) == 2);
+        }
+
+        public static int IsUniqueNumber(int[] numbers)
+        {
+            Dictionary<int,int> dic = new Dictionary<int,int>();
+            int unique = 0;
+            numbers.ToList().ForEach(x =>
+            {
+                if (!dic.ContainsKey(x))
+                {
+                    dic.Add(x, 1);      
+                }
+                else
+                {
+                    dic[x] = dic[x]+1;  
+                }
+                if (dic.Count > 1)
+                {
+                    dic.ToList().ForEach(y => {
+                        if (y.Value != 1) return;
+                        unique = y.Key;
+                    });
+                }
+            });
+            return unique;
         }
     }
 }
